@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>Shop - Premium Art Supplies | Soul Art Hub</title>
+    <meta name="title" content="Shop - Premium Art Supplies | Soul Art Hub">
+    <meta name="description" content="Discover premium art supplies for your creative journey. Professional brushes, paints, canvas, tools, and paper. Quality art materials for artists and students in Egypt.">
+    <meta name="keywords" content="art supplies, art materials, art brushes, art paints, canvas, art tools, art paper, fine arts, Egypt, artists, art students, creative supplies">
+    <meta name="author" content="Soul Art Hub">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://soul-art-hub.vercel.app/shop.html">
+    <meta property="og:title" content="Shop - Premium Art Supplies | Soul Art Hub">
+    <meta property="og:description" content="Discover premium art supplies for your creative journey. Professional brushes, paints, canvas, tools, and paper.">
+    <meta property="og:image" content="https://i.postimg.cc/FHtWXKsd/soul-story.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Soul Art Hub">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- X (formerly Twitter) -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://soul-art-hub.vercel.app/shop.html">
+    <meta property="twitter:title" content="Shop - Premium Art Supplies | Soul Art Hub">
+    <meta property="twitter:description" content="Discover premium art supplies for your creative journey. Professional brushes, paints, canvas, tools, and paper.">
+    <meta property="twitter:image" content="https://i.postimg.cc/FHtWXKsd/soul-story.png">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#B53324">
+    <meta name="msapplication-TileColor" content="#B53324">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Soul Art Hub">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://soul-art-hub.vercel.app/shop.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/temp/soul-light.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/temp/soul-light.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/temp/soul-light.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/temp/soul-light.png">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/shop-styles.css">
+    <link rel="stylesheet" href="css/footer-styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/temp/soul-light.png" alt="Soul" class="logo-image light-logo">
+                    <img src="assets/temp/soul-dark.png" alt="Soul" class="logo-image dark-logo">
+                </a>
+                </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link active">Shop</a></li>
+                <li><a href="offers.html" class="nav-link">Offers</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                                    <li><a href="cart.html" class="nav-link cart-icon">
+                        <span class="cart-count">0</span>
+                        🛒
+                    </a></li>
+                </ul>
+                <button class="theme-toggle" id="theme-toggle" data-theme="light">
+                    <span class="icon sun-icon">☀️</span>
+                    <span class="icon moon-icon">🌙</span>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        </div>
+    </nav>
+
+    <!-- Shop Header -->
+    <section class="shop-header">
+        <div class="container">
+            <h1 class="shop-title">Our Products</h1>
+            <p class="shop-subtitle">Discover premium art supplies for your creative journey</p>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label for="category-filter">Category:</label>
+                    <select id="category-filter">
+                        <option value="">All Categories</option>
+                        <option value="brushes">Brushes</option>
+                        <option value="paints">Paints</option>
+                        <option value="canvas">Canvas</option>
+                        <option value="tools">Tools</option>
+                        <option value="paper">Paper</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price-filter">Price Range:</label>
+                    <select id="price-filter">
+                        <option value="">All Prices</option>
+                        <option value="0-50">EGP 0 - 50</option>
+                        <option value="50-100">EGP 50 - 100</option>
+                        <option value="100-200">EGP 100 - 200</option>
+                        <option value="200+">EGP 200+</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="offers-filter">Offers:</label>
+                    <select id="offers-filter">
+                        <option value="">All Items</option>
+                        <option value="on-sale">On Sale</option>
+                        <option value="new">New Arrivals</option>
+                    </select>
+                </div>
+                
+                <button id="clear-filters" class="btn btn-outline">Clear Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be loaded dynamically from products.json -->
+                <div class="loading-products">
+                    <div class="loading-spinner"></div>
+                    <p>Loading amazing products...</p>
+                    <div class="loading-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/cart-common.js"></script>
+    <script src="js/products-loader.js"></script>
+    <script src="js/image-optimization.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/shop-script.js"></script>
+    <script src="js/forms-handler.js"></script>
+    <script src="js/footer-loader.js"></script>
+    <script src="js/shop-products-loader.js"></script>
+    
+    
+    <!-- Footer Section -->
+    <div id="footer-placeholder"></div>
+</body>
+</html>
